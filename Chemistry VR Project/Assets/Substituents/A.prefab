@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7738542894301389044}
+  - component: {fileID: 4116902875083126698}
   - component: {fileID: 4488437668726737267}
   - component: {fileID: 4951470038201004342}
   - component: {fileID: 626599670272570992}
@@ -21,7 +21,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7738542894301389044
+--- !u!4 &4116902875083126698
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,8 +102,8 @@ Rigidbody:
   m_GameObject: {fileID: 1799273440791598691}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 10
+  m_AngularDrag: 0.8
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
