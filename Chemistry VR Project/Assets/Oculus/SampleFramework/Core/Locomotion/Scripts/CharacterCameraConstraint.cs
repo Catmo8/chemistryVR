@@ -57,8 +57,10 @@ public class CharacterCameraConstraint : MonoBehaviour
 	private readonly Action _cameraUpdateAction;
 	private readonly Action _preCharacterMovementAction;
 
-	private CapsuleCollider _character;
-    private SimpleCapsuleWithStickMovement _simplePlayerController;
+	//private CapsuleCollider _character;
+	private CharacterController _character;
+    //private SimpleCapsuleWithStickMovement _simplePlayerController;
+    private OVRPlayerController _simplePlayerController;
 
 	CharacterCameraConstraint()
 	{
@@ -67,8 +69,10 @@ public class CharacterCameraConstraint : MonoBehaviour
 
 	void Awake ()
 	{
-		_character = GetComponent<CapsuleCollider>();
-		_simplePlayerController = GetComponent<SimpleCapsuleWithStickMovement>();
+		//_character = GetComponent<CapsuleCollider>();
+		_character = GetComponent<CharacterController>();
+		//_simplePlayerController = GetComponent<SimpleCapsuleWithStickMovement>();
+		_simplePlayerController = GetComponent<OVRPlayerController>();
 	}
 
 	private void Start()
